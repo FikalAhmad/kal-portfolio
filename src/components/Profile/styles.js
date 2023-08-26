@@ -135,8 +135,11 @@ export const ProfileContainer = css`
         font-size: 20px;
       }
       &--button-wrap {
-        max-width: auto;
+        max-width: none;
       }
+    }
+    .link {
+      min-width: 165px;
     }
   }
   @media screen and (max-width: 400px) {
@@ -149,9 +152,11 @@ export const ProfileContainer = css`
         font-size: 18px;
       }
       &--button {
-        padding: 13px 25px;
         font-size: 14px;
       }
+    }
+    .link {
+      min-width: 100px;
     }
   }
 `;
