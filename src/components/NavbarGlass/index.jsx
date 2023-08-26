@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { NavbarGlassContainer } from "./styles";
+import { useNavigate } from "react-router-dom";
 
 const NavbarGlass = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -33,7 +35,9 @@ const NavbarGlass = () => {
             <li className="item--li" onClick={() => scrollToSection("project")}>
               Project
             </li>
-            <li className="item--li">Blog</li>
+            <li className="item--li" onClick={() => navigate("comingsoon")}>
+              Blog
+            </li>
             <li className="item--li" onClick={() => scrollToSection("contact")}>
               Contact
             </li>

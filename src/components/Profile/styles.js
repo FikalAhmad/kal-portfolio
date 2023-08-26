@@ -48,7 +48,7 @@ export const ProfileContainer = css`
     }
     &--button {
       font-family: CircularMedium;
-      padding: 13px 30px;
+      /* padding: 13px 30px; */
       color: var(--blue);
       font-size: 16px;
       background-color: var(--white);
@@ -59,6 +59,15 @@ export const ProfileContainer = css`
         background-color: var(--darkblue);
         color: var(--white);
       }
+    }
+  }
+  .link {
+    display: block;
+    padding: 13px 30px;
+    text-decoration: none;
+    color: var(--blue);
+    &:hover {
+      color: var(--white);
     }
   }
 

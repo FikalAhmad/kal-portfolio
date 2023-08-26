@@ -17,6 +17,10 @@ export const FooterContainer = css`
       padding: 10px 18px;
       background-color: var(--blue);
       color: var(--white);
+      &:hover {
+        background-color: var(--darkblue);
+        color: white;
+      }
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {

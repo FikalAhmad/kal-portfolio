@@ -9,22 +9,22 @@ import TailwindIcon from "/src/assets/icons/6.png";
 import PythonIcon from "/src/assets/icons/7.png";
 import PhotoshopIcon from "/src/assets/icons/8.png";
 import FigmaIcon from "/src/assets/icons/9.png";
-
 const About = () => {
   return (
     <div className={AboutContainer}>
-      <h1>🙆‍♂️ About Me</h1>
+      <div>
+        <h1>🙆‍♂️ About Me</h1>
+      </div>
       <div className="about--content">
         <div>
           <img src={CodeCoffee} alt="" />
         </div>
         <div className="about--text">
           <p className="about--desc">
-            I&apos;m a software engineer based in Jakarta, Indonesia and also a
-            information technology student. I have been freelancing for a year
-            now while studying at the university and I&apos;ve manage to gain a
-            decent amount of experience and valuable knowledge from all
-            different kinds of fields throughout my projects/work.
+            I&apos;m a frontend developer based in Jakarta, Indonesia and also a
+            information technology student. I have been freelancing graphic
+            design while studying programming at university and I want to try
+            new things including this software development field.
           </p>
           <hr />
           <h2>Knowledge</h2>

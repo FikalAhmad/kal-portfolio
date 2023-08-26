@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ProfileContainer } from "./styles";
 import MyPhoto from "/src/assets/images/kalprofilebw.jpeg";
 
@@ -14,8 +15,16 @@ const Profile = () => {
             <p className="p--name">AHMAD FIKRI HAIKAL</p>
             <p className="p--desc">Frontend Developer</p>
             <div className="p--button-wrap">
-              <button className="p--button">Hire Me</button>
-              <button className="p--button">Download CV</button>
+              <button className="p--button">
+                <Link to="mailto:fikaalm26@gmail.com" className="link">
+                  Hire Me
+                </Link>
+              </button>
+              <button className="p--button">
+                <Link to="/comingsoon" className="link">
+                  Download CV
+                </Link>
+              </button>
             </div>
           </div>
         </div>
